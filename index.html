@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin=""> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+    <style>
+       /*Vunet Dashboard */
+:root{
+    --primary-color:#00ccb8;
+    --secondary-color:#122a72;
+    --yellow:#f8a21b;
+    --red:#e61f1f;
+    --green:#219f45;
+    --darkgrey:#a2b0bf;
+    --softgrey:#e3e7eb;
+    --textdark:#3d536d;
+    --textdark2:#63748a;
+    --grey:#f6f7f8;
+    --positionX: 10px;
+    --positionXOpposite: -10px;
+    --positionY: 10px;
+    --positionYOpposite: -10px;
+    --angle: 145deg;
+    --blur: 30px;
+    --textColor: #001f3f;
+    --textColorOpposite: #ffffff;
+    --baseColor: #ffffff;
+    --darkColor: #d9d9d9;
+    --lightColor: #ffffff;
+    --firstGradientColor: #e6e6e6;
+    --secondGradientColor: #ffffff;
+    --size: 250px;
+    --radius: 50px;
+}
+body{
+background-color: #f8f8f8;
+font-family: 'Heebo', sans-serif;
+color: var(--textdark);
+margin: 0 80px;
+}
+        .action_box {
+    box-shadow: 8px 8px 10px 0 #e8e8e8, -8px -8px 10px 0 #fefefe;
+    background: #f8f8f8;
+    padding: 24px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    transition: 1.4s all;
+    margin-bottom: 40px;
+}
+        .d-flex.current_card .action_box {
+    width: 25%;  margin: 0 16px;
+}
+
+.current_card .action_box h5{font-size: 25px;
+line-height: 40px;margin-bottom: 0px;
+color: #293646;}
+.new_card .action_box h5 {font-family: Heebo;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 40px;}
+
+.cc_p ul li span.small {
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4E617A;
+}
+.new_card .cc_p ul li span.small {font-family: Heebo;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+/* Text/Grey2 */
+
+color: #4E617A;}
+.cc_p ul li span.title {font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #293646;}
+.cc_p ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cc_p li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}span.title i {
+    font-size: 20px;
+    margin: -3px 6px;
+    position: relative;
+    top: 6px;
+}
+.txt-green {
+        color: var(--green);
+    }
+    .txt-red {
+        color: var(--red);
+    }
+
+    /* .action_box h5 {
+            margin-bottom: 24px;
+        } */
+        
+        .action_box p {
+            font-size: 16px;
+           
+            margin-bottom: 32px !important;
+            font-family: Heebo;
+font-style: normal;
+font-weight: normal;
+line-height: 24px;
+       
+            color: var(--textdark2);
+        }
+        .new_card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+    </style>
+
+    <title>Vunet Dashboard</title>
+  </head>
+  <body>
+      <div class="container-fluid mt-5">
+        <h2>Current card design</h2>
+          <div class="row mt-5 mb-5 p-0">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-0">
+              <div class="current_card row">
+               
+                  
+                  
+                 
+                <div class="col-lg-3"><div class="action_box">
+                    <h5>320</h5>
+                    <p class="mb-0">#Total</p>
+                    <div class="cc_p">
+                      <ul>
+                          <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                          <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                      </ul>
+  
+      </div></div>
+                    
+                    
+                   
+                </div><div class="col-lg-3"><div class="action_box">
+                    <h5>320</h5>
+                    <p class="mb-0">#Total</p>
+                    <div class="cc_p">
+                      <ul>
+                          <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                          <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Same time yesterday</span></li>
+                      </ul>
+  
+      </div></div>
+                    
+                    
+                   
+                </div><div class="col-lg-3"><div class="action_box">
+                    <h5>320</h5>
+                    <p class="mb-0">#Total</p>
+                    <div class="cc_p">
+                      <ul>
+                          <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                          <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                      </ul>
+  
+      </div></div>
+                    
+                    
+                   
+                </div><div class="col-lg-3"><div class="action_box">
+                    <h5>320</h5>
+                    <p class="mb-0">#Total</p>
+                    <div class="cc_p">
+                      <ul>
+                          <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                          <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                      </ul>
+  
+      </div></div>
+                    
+                    
+                   
+                </div>
+           
+                </div>
+              <!-- <div class="d-flex current_card">
+                <div class="action_box ">
+                  <h5>320</h5>
+                  <p class="mb-0">#Total</p>
+                  <div class="cc_p">
+                    <ul>
+                        <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                        <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                    </ul>
+
+                </div>
+                  
+                  
+                 
+              </div>
+              <div class="action_box ">
+                <h5>320</h5>
+                <p class="mb-0">#Total</p>
+                <div class="cc_p">
+                  <ul>
+                      <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                      <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                  </ul>
+
+              </div>
+             </div>
+            <div class="action_box ">
+              <h5>320</h5>
+              <p class="mb-0">#Total</p>
+              <div class="cc_p">
+                <ul>
+                    <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                    <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                </ul>
+
+            </div>
+              
+              
+             
+          </div>
+          <div class="action_box ">
+            <h5>320</h5>
+            <p class="mb-0">#Total</p>
+            <div class="cc_p">
+              <ul>
+                  <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                  <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+              </ul>
+
+          </div>
+            
+            
+           
+        </div>
+              </div> -->
+            </div>
+            <div class="col-lg-3">
+              
+            </div>
+            
+          </div>
+          <h2>New card design</h2>
+          <div class="mb-5 mt-5 p-0 row">
+            <div class="col-lg-8 p-0">
+              <div class="row new_card">
+                <div class="col-lg-3">
+     <div class="action_box">
+                  <h5>320</h5>
+                  <p class="mb-0">#Total</p>
+                  <div class="cc_p">
+                    <ul>
+                        <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                        <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                    </ul>
+
+                </div>
+                  
+    </div>
+                 
+              </div><div class="col-lg-3">
+     <div class="action_box">
+                  <h5>320</h5>
+                  <p class="mb-0">#Total</p>
+                  <div class="cc_p">
+                    <ul>
+                        <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 15.33%</span>  <span class="small">Previous day</span></li>
+                        <li><span class="title" style="width: 40%; display: flex;"><i class="txt-red fas fa-sort-up"></i> 22.33%</span>  <span class="small">Same time yesterday</span></li>
+                    </ul>
+
+                </div>
+                  
+    </div>
+                 
+              </div><div class="col-lg-3">
+     <div class="action_box">
+                  <h5>320</h5>
+                  <p class="mb-0">#Total</p>
+                  <div class="cc_p">
+                    <ul>
+                        <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                        <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                    </ul>
+
+                </div>
+                  
+    </div>
+                 
+              </div><div class="col-lg-3">
+     <div class="action_box">
+                  <h5>320</h5>
+                  <p class="mb-0">#Total</p>
+                  <div class="cc_p">
+                    <ul>
+                        <li><span class="title"><i class="txt-green fas fa-sort-up"></i> 200</span>  <span class="small">Previous day</span></li>
+                        <li><span class="title"><i class="txt-red fas fa-sort-up"></i> 300</span>  <span class="small">Previous Week</span></li>
+                    </ul>
+
+                </div>
+                  
+    </div>
+                 
+              </div>
+              
+            
+          
+              </div>
+            </div>
+            
+          </div>
+        
+      </div>
+  </body>
+</html>
